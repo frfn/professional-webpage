@@ -51,11 +51,52 @@ Workflow
         /css (difference is for CSS that is not created by us)
         /js
         /fonts
+
+    index.html
+
+    style.css
 ```
 
 2. Develop in VS Code
 
--
+-   normalize.css: makes browser render all elements consistently
+
+    -   npm install normalize.css
+
+-   LATO font: go to google fonts and just copy and paste the `<link>`!
+
+-   work on CSS, styles.css
+
+## Responsive Web Design?
+
+    This means that your app is compatible for all devices that views your app!
+
+
+    From Mobile, Tablet, to Desktop!
+
+-   Work on Mobile View First!
+
+### Fluid Grid
+
+### This is deprecated - use Flexbox.
+
+-   all `LAYOUT` elements, such as `width, height, images` for content usage are sized in `relative units`, such as **`percentages`** INSTEAD of pixels!
+
+-   Media Queries are CSS rules that style for all different browser width!
+
+    ```
+    @media (min-width: 500px){
+    ...
+    }
+    ```
+
+    Using `responsivegridsystem` CSS file for an easy **responsive** design!
+
+    -   The grid.css is NOT made by us, it is made by `THIRD PARTY`, don't worry about it :) now put it in **`/resources/css`** folder!
+
+    ### How it works
+
+    Go to http://www.responsivegridsystem.com/
 
 <br>
 <br>

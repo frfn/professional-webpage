@@ -1,0 +1,20 @@
+/* good practice right here */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+
+/* this is where the google font will go! */
+html {
+	background: white;
+	color: #555;
+	font-family: "Lato", "Helvetica", sans-serif;
+	font-size: 20px;
+
+	/* optimizes the render of text */
+	text-rendering: optimizeLegibility;
+
+	/* 300 coming from LATO, keep it consistent */
+	font-weight: 300;
+}
