@@ -98,6 +98,39 @@ Workflow
 
     Go to http://www.responsivegridsystem.com/
 
+### Part 1 - Appreciate how BASIC it first looks.
+
+Without all the CSS stuff, this would look so basic.
+
+It just is a div, with one `<h1>` element, and two `<a>` elements. I want to appreciate what CSS can do.
+
+-   semantic HTML
+-   overlay an image, set it as high browser viewport
+-   style cool buttons + animations
+-   style links (# a good dummy link)
+-   simple nav
+
+-   `background-image: url(img/hero.jpg)`
+-   linear-gradient(top color, bottom color)
+-   background-{props}: ...
+-   transform: tranlate() hack, for centering
+-   New CSS props used:
+    1. text-transform
+    2. letter-spacing
+    3. word-spacing
+    4. font-weight
+    5. inline-block
+        - does not force line break
+        - but can have margin and padding, unlike normal inline element!
+
+### Part 2 - Button
+
+-   `transition: ...propNames 0.5s, default: ease in`
+
+### Part 3 - Logo + Nav
+
+-   Comment the CSS file... NEEDED to keep things organized
+
 <br>
 <br>
 

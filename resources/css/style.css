@@ -1,8 +1,11 @@
 /* good practice right here */
+
+/* =============== BASIC SETUP =============== */
+
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: 0;
+	box-sizing: border-box;
 }
 
 /* this is where the google font will go! */
@@ -10,7 +13,7 @@ html {
 	background: white;
 	color: #555;
 	font-family: "Lato", "Helvetica", sans-serif;
-	font-size: 20px;
+	font-size: 20px; /* base size, setting it FOR all devices */
 
 	/* optimizes the render of text */
 	text-rendering: optimizeLegibility;
@@ -25,3 +28,121 @@ html {
 	margin: 0 auto; /* centers */
 	/* border: 1px solid red; */
 }
+
+/* gets rid of whitespace */
+h1 {
+	/* 20px so it gives the spacing for the bottom, TOP RIGHT BOTTOM LEFT */
+	margin: 0 auto 20px auto;
+	color: white;
+
+	/* use percentages for RELATIVE UNITS, keep in mind responsive design */
+	font-size: 240%; /* or 40px */
+
+	/* big font size? LOWER THE WEIGHT */
+	font-weight: 300;
+
+	/* turns all letters to uppercase */
+	text-transform: uppercase;
+
+	/* space between each LETTER */
+	letter-spacing: 1px;
+
+	/* space between each WORD */
+	word-spacing: 3px;
+}
+
+/* =============== HEADER =============== */
+
+header {
+	/* uses the photo!, you can then use the background props */
+	/* linear-gradient() is a cool little trick, it's like using two images at the same time (i tried 2 imgs, doesnt work lol) */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+		url(img/hero.jpg);
+
+	/* viewport, but way too zoomed in */
+	height: 100vh;
+
+	/* this fixes the image size + position */
+	background-size: cover;
+	background-position: center;
+}
+
+/* positioning the title and buttons! */
+.hero-text-box {
+	/* absolute = stays in this exact position NOT relative to parent component */
+	position: absolute;
+
+	/* width of element, needed for border box */
+	width: 1140px;
+
+	/* use % for relative units (mobile view support) */
+	/* positioning for the hero text box */
+	top: 50%;
+	left: 50%;
+
+	/* by using this hack, it will use the top + left values */
+	/* transform takes into consideration the top + left values */
+	/* negative value because we want the elements to go to the LEFT of where it was before */
+	transform: translate(-50%, -50%); /* width | height */
+}
+
+/* =============== BUTTON =============== */
+
+/* creating a base for buttons */
+
+/* psuedo-classes! 
+:link
+:visited
+:active
+:hover
+*/
+
+.btn:link,
+.btn:visited {
+	/* so we can give our buttons padding + margin */
+	/* EDIT: this works, it gives the inline elements padding + margin */
+	display: inline-block;
+	padding: 10px 30px;
+
+	/* weight */
+	font-weight: 300;
+
+	/* gets rid of underline */
+	text-decoration: none;
+
+	/* roundness of button */
+	border-radius: 200px;
+
+	/* we can specify more than one element! */
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+/* we want visited to not show different colors */
+.btn-full:link,
+.btn-full:visited {
+	background-color: #e67e22;
+	color: white;
+
+	/* reason there is a border here is so that it matches the size of btn-ghost */
+	border: 1px solid #e67e22;
+
+	/* creating space */
+	margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+	border: 1px solid #e67e22;
+	color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+	border: 1px solid #e67e22;
+	background-color: #cf6d17;
+	color: white;
+}
+
+/* =============== NAV =============== */
+
+/* ===============  =============== */
