@@ -18,3 +18,10 @@ html {
 	/* 300 coming from LATO, keep it consistent */
 	font-weight: 300;
 }
+
+/* we need to do this to use the responsivegridsystem, use Flexbox */
+.row {
+	max-width: 1140px;
+	margin: 0 auto; /* centers */
+	/* border: 1px solid red; */
+}
