@@ -35,169 +35,287 @@
 
 -   Font?: any good looking font (such as LATO font)
 
-    ## Workflow
+## Start
 
-    1.  create folders!
+## Workflow
+
+1.  create folders!
+
+```
+    /resources
+        /css
+            /img (different from /img in /resources)
+        /js
+        /data
+        /img
+
+    /vendors (this is where 3rd party files will go)
+        /css (difference is for CSS that is not created by us)
+        /js
+        /fonts
+
+    index.html
+
+    style.css
+```
+
+2. Develop in VS Code
+
+-   normalize.css: makes browser render all elements consistently
+
+    -   npm install normalize.css
+
+-   LATO font: go to google fonts and just copy and paste the `<link>`!
+
+-   work on CSS, styles.css
+
+## Responsive Web Design?
+
+    This means that your app is compatible for all devices that views your app!
+
+
+    From Mobile, Tablet, to Desktop!
+
+-   Work on Mobile View First!
+
+### Fluid Grid
+
+### Grid is deprecated - use Flexbox.
+
+-   all `LAYOUT` elements, such as `width, height, images` for content usage are sized in `relative units`, such as **`percentages`** INSTEAD of pixels!
+
+-   Media Queries are CSS rules that style for all different browser width!
 
     ```
-        /resources
-            /css
-                /img (different from /img in /resources)
-            /js
-            /data
-            /img
-
-        /vendors (this is where 3rd party files will go)
-            /css (difference is for CSS that is not created by us)
-            /js
-            /fonts
-
-        index.html
-
-        style.css
+    @media (min-width: 500px){
+    ...
+    }
     ```
 
-    2. Develop in VS Code
+    Using `responsivegridsystem` CSS file for an easy **responsive** design!
 
-    -   normalize.css: makes browser render all elements consistently
+    -   The grid.css is NOT made by us, it is made by `THIRD PARTY`, don't worry about it :) now put it in **`/resources/css`** folder!
 
-        -   npm install normalize.css
+How it works:
 
-    -   LATO font: go to google fonts and just copy and paste the `<link>`!
+Go to http://www.responsivegridsystem.com/
 
-    -   work on CSS, styles.css
+<br>
+<br>
 
-    ## Responsive Web Design?
+## Header Section
 
-        This means that your app is compatible for all devices that views your app!
+### Part 1 - Appreciate how BASIC it first looks.
 
+---
 
-        From Mobile, Tablet, to Desktop!
+Without all the CSS stuff, this would look so basic.
 
-    -   Work on Mobile View First!
+It just is a div, with one `<h1>` element, and two `<a>` elements. I want to appreciate what CSS can do.
 
-    ### Fluid Grid
+-   semantic HTML
+-   overlay an image, set it as high browser viewport
+-   style cool buttons + animations
+-   style links (# a good dummy link)
+-   simple nav
 
-    ### This is deprecated - use Flexbox.
+-   `background-image: url(img/hero.jpg)`
+-   linear-gradient(top color, bottom color)
+-   background-{props}: ...
+-   transform: tranlate() hack, for centering
+-   New CSS props used:
+    1. text-transform
+    2. letter-spacing
+    3. word-spacing
+    4. font-weight
+    5. inline-block
+        - does not force line break
+        - but can have margin and padding, unlike normal inline elements!
 
-    -   all `LAYOUT` elements, such as `width, height, images` for content usage are sized in `relative units`, such as **`percentages`** INSTEAD of pixels!
+<br>
+<br>
 
-    -   Media Queries are CSS rules that style for all different browser width!
+### Part 2 - Button
+
+---
+
+-   `transition: ...propNames 0.5s, default: ease in`
+
+<br>
+<br>
+
+### Part 3 - Logo + Nav
+
+---
+
+-   Comment the CSS file... NEEDED to keep things organized
+
+<br>
+<br>
+
+## Feature Section
+
+### Part 1 - Using fluid grid, icons and pseudo-class `:after`
+
+---
+
+-   special entities, `&mdash;`(&mdash;) or like `&amp;`(&amp;)
+
+-   long: because lots of text
+-   copy: copywrite, text for website
+
+### ICONS
+
+-   visit www.ionicons.com for cool icons
+
+    -   copy & pasted content!
+
+    -   downloaded `Designer Pack` and transfered files to vendors.
+
+    -   Mine was different, he had CSS files and all I had were svg links...
+
+    -   fixed: I just followed instructions on how to use it
+
+    -   it is just
 
         ```
-        @media (min-width: 500px){
-        ...
-        }
+        <div>
+            <h3></h3>
+            <p></p>
+        </div>
         ```
 
-        Using `responsivegridsystem` CSS file for an easy **responsive** design!
+### Part 2 - features section continued! (white space!)
 
-        -   The grid.css is NOT made by us, it is made by `THIRD PARTY`, don't worry about it :) now put it in **`/resources/css`** folder!
+---
 
-        ### How it works
+-   we used padding instead of margin as padding increases spaces INSIDE the box
 
-        Go to http://www.responsivegridsystem.com/
+-   `:after` is pretty snazzy, it's saying after cssProp, do this.
 
-    ## Header Section
+-   NOTE: you MUST use `content: ""` to use `:after`
 
-    ### Part 1 - Appreciate how BASIC it first looks.
+    > `h2:after { ...do this after h2... }`
 
-    ***
+-   `margin: 0 auto` VS `text-align: center`
 
-    Without all the CSS stuff, this would look so basic.
+    > **margin**: used for whole component
 
-    It just is a div, with one `<h1>` element, and two `<a>` elements. I want to appreciate what CSS can do.
+    > **text-align**: used for content INSIDE component
 
-    -   semantic HTML
-    -   overlay an image, set it as high browser viewport
-    -   style cool buttons + animations
-    -   style links (# a good dummy link)
-    -   simple nav
+-   created `.box p` because our paragraphs is INSIDE the `.box` class, it is the parent! We can target the `<p>` by `.box p`
 
-    -   `background-image: url(img/hero.jpg)`
-    -   linear-gradient(top color, bottom color)
-    -   background-{props}: ...
-    -   transform: tranlate() hack, for centering
-    -   New CSS props used:
-        1. text-transform
-        2. letter-spacing
-        3. word-spacing
-        4. font-weight
-        5. inline-block
-            - does not force line break
-            - but can have margin and padding, unlike normal inline elements!
+-   New CSS props:
+    1. `line-height: 145%` ( good range: 120% - 150% ) aka Line Height
 
-    <br>
-    <br>
+## Favorite Meals Section
 
-    ### Part 2 - Button
+### Part 1:
 
-    ***
+---
 
-    -   `transition: ...propNames 0.5s, default: ease in`
+<br>
+<br>
 
-    <br>
-    <br>
+### Part 2
 
-    ### Part 3 - Logo + Nav
+---
 
-    ***
+<br>
+<br>
 
-    -   Comment the CSS file... NEEDED to keep things organized
+## How it Works Section
 
-    <br>
-    <br>
+### Part 1
 
-    ## Feature Section
+---
 
-    ### Part 1 - Using fluid grid, icons and pseudo-class `:after`
+<br>
+<br>
 
-    -   special entities, `&mdash;`(&mdash;) or like `&amp;`(&amp;)
+### Part 2
 
-    -   long: because lots of text
-    -   copy: copywrite, text for website
+---
 
-    ICONS
+<br>
+<br>
 
-    -   visit www.ionicons.com for cool icons
+## Cities Section
 
-        -   copy & pasted content!
+### Part 1
 
-        -   downloaded `Designer Pack` and transfered files to vendors.
+---
 
-        -   Mine was different, he had CSS files and all I had were svg links...
+<br>
+<br>
 
-        -   fixed: I just followed instructions on how to use it
+### Part 2
 
-        -   it is just
+---
 
-            ```
-            <div>
-                <h3></h3>
-                <p></p>
-            </div>
-            ```
+<br>
+<br>
 
-    ### Part 2 - features section continued! (white space!)
+## Customer Testimonials Section
 
-    -   we used padding instead of margin as padding increases spaces INSIDE the box
+### Part 1
 
-    -   `:after` is pretty snazzy, it's saying after cssProp, do this.
+---
 
-    -   NOTE: you MUST use `content: ""` to use `:after`
+<br>
+<br>
 
-        > `h2:after { ...do this after h2... }`
+### Part 2
 
-    -   `margin: 0 auto` VS `text-align: center`
+---
 
-        > **margin**: used for whole component
+<br>
+<br>
 
-        > **text-align**: used for content INSIDE component
+## Sign Up Section
 
-    -   created `.box p` because our paragraphs is INSIDE the `.box` class, it is the parent! We can target the `<p>` by `.box p`
+### Part 1
 
-    -   New CSS props:
-        1. `line-height: 145%` ( good range: 120% - 150% ) aka Line Height
+---
+
+<br>
+<br>
+
+### Part 2
+
+---
+
+<br>
+<br>
+
+## Contact Form Section
+
+### Part 1
+
+---
+
+<br>
+<br>
+
+### Part 2
+
+---
+
+<br>
+<br>
+
+## Footer Section
+
+### Part 1
+
+---
+
+<br>
+<br>
+
+### Part 2
+
+---
 
 <br>
 <br>
