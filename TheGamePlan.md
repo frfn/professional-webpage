@@ -210,25 +210,37 @@ It just is a div, with one `<h1>` element, and two `<a>` elements. I want to app
 
 ## Favorite Meals Section
 
-### Part 1:
+### Part 1: Grid of nice pictures and zoom-in transition using CSS & making `<img>` darker!
 
 ---
 
-<br>
-<br>
+### Using `<figure>`?
 
-### Part 2
+It is for illustrations, images, etc.
 
----
+New uses for CSS props:
+
+-   `overflow: hidden`
+-   `transform: scale(1.15)`
+-   `transition: tranform .2s`
+-   `opacity: 0.7`
 
 <br>
 <br>
 
 ## How it Works Section
 
-### Part 1
+### Part 1: draw circle in CSS, cool technique to separate between sections, incorporate App Store and Play Store buttons
 
 ---
+
+-   created two main divs, one for header, one for the content
+
+    -   first div: contains `<h2>`
+
+    -   second div: contains 2 `<div>`,
+        -   one for phone image
+        -   two for work steps + links that are buttons `<a> <img /> </a>`
 
 <br>
 <br>
@@ -236,13 +248,66 @@ It just is a div, with one `<h1>` element, and two `<a>` elements. I want to app
 ### Part 2
 
 ---
+
+-   styled the CSS
+
+```
+.app-screen { } // for iphone image
+.steps-box { } // for the two divs, phone and content
+.work-steps { } // for the steps and numbers
+.button-app { } // for the buttons
+```
+
+New CSS props used:
+
+-   `:first-child`
+-   `:last-child`
+-   `:last-of-type`
+
+### Important
+
+The reason there was no padding on top of `HOW IT WORKS - SIMPLE AS 1, 2, 3` title
+
+-   is because you did NOT clear the `float` property of the images before (the children of `<ul>` are `float: left`) and the `<h2>` starts with the beginning of the photos
+
+    -   you **`must`** clear the floats! You don't need to understand the code. Just know what it does.
+
+    To use: use a `<div class="clearfix">`
+
+    ```
+    /* clearfix class */
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /* DEPRECATED! */
+    .clearfix {
+        content: ".";
+        clear: both;
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+    ``
+    ```
 
 <br>
 <br>
 
 ## Cities Section
 
-### Part 1
+### Part 1: I basically coded it myself
+
+No New learns...
+
+-   Renamed the ion icons class to a more specified one, so it does not affect the features icons and the location icons!
 
 ---
 
@@ -252,22 +317,42 @@ It just is a div, with one `<h1>` element, and two `<a>` elements. I want to app
 ### Part 2
 
 ---
+
+Formatting the images, just targeted its parent class and wrote `.box img { width: 100% }`, to my surprised it fit amazingly well, the span 1 of 4 gave it its width!
+
+Gotten an annoying underline when the `a` tag was styled, in some cases, you will have to specify `:link` and `:hover` and do `border: 0` to get rid of it.
 
 <br>
 <br>
 
 ## Customer Testimonials Section
 
-### Part 1
+### Part 1: background-image effect
 
 ---
+
+-   Very easy: grabbed a background image, styled with linear gradient!
+-   background attachment is FIXED -- amazing effect!
 
 <br>
 <br>
 
-### Part 2
+### Part 2: customer testimonial
 
 ---
+
+-   For some reason seeing all the words jangled up `overwhelmed` me... LOL. Must be because I am a little tired!
+
+-   New HTML Semantics Used:
+
+    -   `<blockquote>`
+    -   `<cite>`
+
+-   TIP:
+
+    -   to use `position: absolute`, the parent must have ~~some type of `position` defined, either `fixed`, `relative`, or `absolute`~~,
+
+    -   only `ONE` prop, `"position: relative"`
 
 <br>
 <br>

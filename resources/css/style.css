@@ -6,10 +6,44 @@ Orange Color: #e67e22
 
 /* =============== BASIC SETUP =============== */
 
+/* clearfix class */
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* .clearfix {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+} */
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+a:link,
+a:visited {
+	color: #e67e22;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #e67e22;
+	transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+	color: #555;
+	border-bottom: 1px solid transparent;
 }
 
 /* this is where the google font will go! */
@@ -71,6 +105,8 @@ header {
 	/* this fixes the image size + position */
 	background-size: cover;
 	background-position: center;
+
+	background-attachment: fixed;
 }
 
 /* positioning the title and buttons! */
@@ -142,7 +178,7 @@ header {
 
 .btn:link,
 .btn:visited {
-	/* so we can give our buttons padding + margin */
+	/* so we can give our buttons padding, border, and margin */
 	/* EDIT: this works, it gives the inline elements padding + margin */
 	display: inline-block;
 	padding: 10px 30px;
@@ -189,12 +225,18 @@ header {
 /* =============== 2. FEATURE =============== */
 
 section {
-	padding: 80px 0;
+	padding: 80px 0; /* only top and bottom! */
 
 	/* Testing! Show's how it affects section
 	background-color: turquoise; 
 	margin: 100px; 
 	 */
+}
+
+.section-steps {
+	background-color: #f4f4f4;
+	/* padding-top: 80px; */
+	/* margin-top: 80px; */
 }
 
 .section-features {
@@ -204,7 +246,7 @@ section {
 	line-height: 145%;
 	width: 70%;
 
-	margin: auto; /* the whole element! */
+	margin: 30px auto; /* the whole element! */
 	/* text-align: center; ** the content inside */
 
 	/* tip:
@@ -264,9 +306,195 @@ h3 {
 	/* letter-spacing: 1px; ** with this it forces a line break! */
 }
 
-ion-icon {
+/* big icons! */
+.icon-big {
 	margin-bottom: 20px;
 	font-size: 350%;
 	color: #cf6d17;
 	display: block;
+}
+
+/* =============== 3. Favorite Meals =============== */
+
+/* white bottom border... bakit?! */
+
+.section-meals {
+	padding: 0;
+	/* margin: 0; */
+	/* height: 100vh; */
+}
+
+.meals-showcase {
+	list-style: none;
+	width: 100%;
+}
+
+.meals-showcase li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.meal-photo {
+	background: black;
+	overflow: hidden; /* still overflowing, BUT no scroll */
+	width: 100%;
+	margin: 0; /* must do this because NORMALIZE CSS file overwrites some CSS props */
+}
+
+.meal-photo img {
+	opacity: 0.7; /* background is white, so opacity will fade to white, we change to black .meal-photo */
+	transform: scale(1.15); /* 115% big SO it overflows*/
+	transition: transform 0.5s, opacity 0.5s;
+	height: auto;
+	width: 100%; /* this is the important piece! */
+}
+
+.meal-photo img:hover {
+	opacity: 1;
+	transform: scale(
+		1.05
+	); /* if 1, you can see white bottom border, so do 1.05! */
+}
+
+/* =============== 4. How it Works! =============== */
+
+/* phone IMG */
+.app-screen {
+	height: auto;
+	width: 40%;
+}
+
+.steps-box {
+	margin-top: 30px; /* margin: 6px will disrupt grid flow!*/
+}
+
+/* first child of .steps-box, the PHONE IMAGE */
+.steps-box:first-child {
+	text-align: right;
+	padding-right: 3%; /* layout prop? MUST be percentage for responsive web design */
+}
+
+/* second child! */
+.steps-box:last-child {
+	padding-left: 3%;
+	margin-top: 70px;
+}
+
+.works-steps {
+	margin-bottom: 50px;
+}
+
+.works-steps div {
+	color: #e67e22;
+	border: 3px solid #e67e22;
+	border-radius: 50%; /* to make it into a circle! */
+
+	/* equal measurements so it can be circle!! */
+	height: 54px;
+	width: 54px;
+
+	text-align: center; /* centers the number but still above center line */
+
+	padding: 5px; /* fixes number, now centered */
+
+	/* since this is div, it will float LEFT of <p> */
+
+	font-size: 150%;
+
+	margin-right: 30px;
+
+	float: left;
+	/* 
+	display: inline-block; so we can have padding + margin! 
+	this was commented out because float:left nulls it
+	*/
+}
+
+/* :last-of-type is similar to :last-child! */
+.works-steps:last-of-type {
+	margin-bottom: 80px;
+}
+
+/* i see YOU MUST specify the :link and :visited */
+.button-app:link,
+.button-app:visited {
+	border: 0;
+}
+
+/* we're targeting img, if you do just .button-app, it will not work. */
+.button-app img {
+	height: 50px;
+	margin-right: 10px;
+}
+
+/* =============== 5. Cities =============== */
+
+.box img {
+	width: 100%; /* 100% of the span-1-of-4!!  */
+	margin-bottom: 15px;
+}
+
+.city-feature {
+	margin-bottom: 10px;
+}
+
+.icon-small {
+	/* border: 2px solid red; */
+	display: inline-block;
+	text-align: center;
+	color: #e67e22;
+	width: 30px;
+	font-size: 120%;
+	margin-right: 10px;
+
+	/* 'secret' to aligning the icon VERTICALLY to the text */
+	line-height: 120%;
+	vertical-align: middle;
+	margin-top: -5px;
+}
+
+/* =============== 5. Customer Testimonials =============== */
+
+.section-testimonials {
+	background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.8)),
+		url(img/back-customers.jpg);
+
+	background-size: cover;
+
+	color: white;
+
+	background-attachment: fixed;
+}
+
+blockquote:before {
+	/* using glyphs! css-tricks.com + glyphs */
+	content: "\201c";
+	font-size: 400%;
+	display: block;
+
+	position: absolute; /* to use absolute, you MUST use position: relative in the parent container! */
+	top: 5px;
+	left: 0;
+}
+
+blockquote {
+	position: relative;
+	padding: 2%;
+	font-style: italic;
+	line-height: 145%;
+}
+
+cite {
+	display: block;
+	margin-top: 25px;
+	/* font-size: 90%; */
+	/* border: 2px solid red; */
+}
+
+cite img {
+	border-radius: 50%;
+	height: 50px;
+	margin-right: 10px;
+	vertical-align: middle;
 }
