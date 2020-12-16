@@ -470,15 +470,16 @@ h3 {
 blockquote:before {
 	/* using glyphs! css-tricks.com + glyphs */
 	content: "\201c";
-	font-size: 400%;
+	font-size: 500%;
 	display: block;
 
 	position: absolute; /* to use absolute, you MUST use position: relative in the parent container! */
-	top: 5px;
-	left: 0;
+	top: -5px;
+	left: -5px;
 }
 
 blockquote {
+	margin-top: 10px;
 	position: relative;
 	padding: 2%;
 	font-style: italic;
