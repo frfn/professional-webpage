@@ -341,7 +341,7 @@ Gotten an annoying underline when the `a` tag was styled, in some cases, you wil
 
 ---
 
--   For some reason seeing all the words jangled up `overwhelmed` me... LOL. Must be because I am a little tired!
+-   For some reason seeing all the words jangled up `overwhelmed` me... LOL. Must be because I was a little tired!
 
 -   New HTML Semantics Used:
 
@@ -361,14 +361,26 @@ Gotten an annoying underline when the `a` tag was styled, in some cases, you wil
 
 ### Part 1
 
+Layed out the code + set up for styling!
+
 ---
+
+Nothing new!
 
 <br>
 <br>
 
 ### Part 2
 
+Create a box shadow with CSS + border radius desgin!
+
 ---
+
+Styling!
+
+.plan-price font size = 300%, since .plan-price span is a child, then you will have to set it to 30% to bring it back to the original font size!
+
+using a space will not cut it, you must use `&nbsp;`
 
 <br>
 <br>
