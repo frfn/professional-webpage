@@ -398,7 +398,6 @@
 			<div class="row">
 				<!-- the container div -->
 				<div class="col span-1-of-3">
-					<div>
 						<div class="plan-box">
 							<!-- Plan Information -->
 							<div>
@@ -422,7 +421,6 @@
 								<a href="#" class="btn btn-full">Sign up now</a>
 							</div>
 						</div>
-					</div>
 				</div>
 
 				<!-- the container div -->
@@ -462,7 +460,7 @@
 							<ul>
 								<li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>1 meal</li>
 								<li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Order from 8 am to 12 pm</li>
-								<li><ion-icon name="close-outline" class="icon-small"></ion-icon></li>
+								<li><ion-icon name="close-outline" class="icon-small"></ion-icon>Access to standard creations</li>
 								<li><ion-icon name="checkmark-outline" class="icon-small"></ion-icon>Free delivery</li>
 							</ul>
 						</div>
@@ -476,6 +474,123 @@
 
 		</section>
 	
+		<!-- Contact Form -->
+		<section class="section-form">
+			<div class="row">
+				<h2>We're happy to hear from you</h2>
+			</div>
+
+			<div class="row">
+				<form method="post" action="#" class="contact-form">
+
+					<!-- NAME -->
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="name">Name</label>
+						</div>
+
+						<div class="col span-2-of-3">
+							<input type="text" id="name" name="name" placeholder="Your Name" required />
+						</div>
+					</div>
+
+					<!-- EMAIL -->
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="email">Email</label>
+						</div>
+
+						<div class="col span-2-of-3">
+							<input type="email" id="email" name="email" placeholder="Your Email" required />
+						</div>
+					</div>
+
+					<!-- HOW YOU FIND US -->
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="find-us">How did you find us?</label>
+						</div>
+
+						<div class="col span-2-of-3">
+							<select name="find-us" id="find-us">
+								<option value="linkedin">LinkedIn</option>
+								<option value="friends">Friends</option>
+								<option value="ad" selected>Advertisement</option> <!-- selected selects this first -->
+								<option value="search">Search Engine</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- NEWS LETTER -->
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="news">Newsletter?</label>
+						</div>
+
+						<div class="col span-2-of-3">
+							<input type="checkbox" name="news" id="news" checked/> Yes, please!<!-- means this is selected! -->
+						</div>
+					</div>
+
+					<!-- TEXT AREA -->
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="message">Drop us a line</label>
+						</div>
+
+						<div class="col span-2-of-3">
+							<textarea id="message" name="message" placeholder="Your text here..."></textarea>
+						</div>
+					</div>
+
+					<!-- BUTTON -->
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+
+						<div class="col span-2-of-3">
+							<!-- <button id="button" name="button">Submit!</button> -->
+							<input type="submit" value="Send It!" class="btn btn-full" />
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="row">
+				<div class="col span-1-of-2">
+					<ul class="footer-nav">
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">iOS App</a></li>
+						<li><a href="#">Play Store App</a></li>
+					</ul>
+				</div>
+				<div class="col span-1-of-2">
+					<ul class="social-links">
+						<li><a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></li>
+						<li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a></li>
+						<li><a href="#"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a></li>
+						<li><a href="#"><ion-icon name="logo-google" class="google"></ion-icon></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequatur ea possimus necessitatibus similique natus sint iste nam, quasi tenetur deserunt autem quidem, hic magni sed? Delectus assumenda sed magnam? Architecto recusandae ipsa quae voluptatibus! Veniam facere, obcaecati, debitis sit perferendis sequi tenetur voluptas magni numquam nemo consectetur, nesciunt excepturi.
+				</p>
+
+				<p>
+					Copyright &copy; 2020 by OmniFlex, All rights reserved.
+				</p>
+			</div>
+		</footer>
+
 	</body>
 	<!-- I'm assuming this will be used all over, so I'll just have it here -->
 	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>

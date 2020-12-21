@@ -389,12 +389,18 @@ using a space will not cut it, you must use `&nbsp;`
 
 ### Part 1
 
+Creating FORMS in HTML and styling them!
+
 ---
+
+input has attributes { id, name, placeholder, type }
 
 <br>
 <br>
 
 ### Part 2
+
+CSS style... input[type="text"] , input[type="email"] , input[type="submit"]
 
 ---
 
@@ -406,6 +412,12 @@ using a space will not cut it, you must use `&nbsp;`
 ### Part 1
 
 ---
+
+Simple!
+
+repeat nav, social,
+
+maybe some text
 
 <br>
 <br>
