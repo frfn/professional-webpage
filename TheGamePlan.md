@@ -419,12 +419,9 @@ repeat nav, social,
 
 maybe some text
 
-<br>
-<br>
+using SOCIAL ICONS
 
-### Part 2
-
----
+Had to think of a way to style the CSS, the transitions for the Social Media icons were styled different!
 
 <br>
 <br>
