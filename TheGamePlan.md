@@ -428,6 +428,86 @@ Had to think of a way to style the CSS, the transitions for the Social Media ico
 
 ## 5.
 
+## Resonsive Web Design!
+
+`@media` queries!
+
+These are the breakpoints for mobile, tablet, and desktop!
+
+> 0px ---> 480px - nothing to mobile
+
+> 480px ---> 768px - mobile to tablet
+
+> 768ox ---> 1024px - tablet portrait to tablet landscape
+
+> 1024px ---> >px - desktop
+
+### Syntax:
+
+    @media not|only mediatype and (expressions) {
+        CSS-Code;
+    }
+
+meaning of the `not`, `only`, and `and` keywords:
+
+<br>
+
+## Arguments
+
+| Key Word | Description                                                                                                                                                             |
+| :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `not`    | The not keyword reverts the meaning of an entire media query.                                                                                                           |
+| `only`   | The only keyword prevents older browsers that do not support media queries with media features from applying the specified styles. It has no effect on modern browsers. |
+| `and`    | The and keyword combines a media feature with a media type or other media features.                                                                                     |
+
+<br>
+
+They are all optional. However, if you use not or only, you must also specify a media type.
+
+<br>
+
+## Media Types
+
+| Key Word | Description                                           |
+| :------- | :---------------------------------------------------- |
+| `all`    | Used for all media type devices                       |
+| `print`  | Used for printers                                     |
+| `screen` | Used for computer screens, tablets, smart-phones etc. |
+| `speech` | Used for screenreaders that "reads" the page out loud |
+
+<br>
+
+You can combine screen widths as well:
+
+Example:
+
+    @media screen and (max-width: 900px) and (min-width: 600px) {
+        div.example {
+            font-size: 50px;
+            padding: 50px;
+            border: 8px solid black;
+            background: yellow;
+        }
+    }
+
+## Add it to index.html
+
+-   add the `queries.css` to the `<head>` in the file!
+
+<br>
+
+## `<meta>`
+
+-   META tag! Add this to the `<head>` as well!
+
+    -   `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+    This gives the browser instructions on how to control the page's dimensions and scaling.
+
+    The `width=device-width` part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+    The `initial-scale=1.0` part sets the initial zoom level when the page is first loaded by the browser.
+
 <br>
 <br>
 
@@ -437,3 +517,10 @@ Had to think of a way to style the CSS, the transitions for the Social Media ico
 <br>
 
 ## 7.
+
+# MARKDOWN NOTES
+
+| Syntax    | Description |   Test Text |
+| :-------- | :---------: | ----------: | --- |
+| Header    |    Title    | Here's this |
+| Paragraph |    Text     |    And more | ßß  |

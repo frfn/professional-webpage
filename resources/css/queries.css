@@ -1,0 +1,18 @@
+/* THESE ARE FOR APPLE DEVICES */
+
+/* apply the rules when the width is LESS THAN or EQUAL to 480px - This is for Small Phones */
+/* 0 to 480px! 480px being the max! */
+@media only screen and (max-width: 480px) {
+}
+
+/* for Small Phones to Tablets! 767px being the max! */
+@media only screen and (max-width: 767px) {
+}
+
+/* for iPad in Portrait Mode! 1023px being the max */
+@media only screen and (max-width: 1023px) {
+}
+
+/* for iPad in Landscape Mode + Computer View, 1200px being the max! */
+@media only screen and (max-width: 1200px) {
+}
