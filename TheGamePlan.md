@@ -508,6 +508,42 @@ Example:
 
     The `initial-scale=1.0` part sets the initial zoom level when the page is first loaded by the browser.
 
+## CSS Browser Prefixes
+
+-   A way to add support for CSS files:
+
+| Platform | Prefix     |
+| :------- | :--------- |
+| Android  | `-webkit-` |
+| Chrome   | `-webkit-` |
+| iOS      | `-webkit-` |
+| Safari   | `-webkit-` |
+| Firefox  | `-moz- `   |
+| IE       | `-ms- `    |
+| Opera    | `-o- `     |
+
+<br>
+
+### Examples
+
+```
+-webkit-border-radius: 25px;
+-webkit-width: 30px
+-mox-border: 1px solid red
+border-radius: 25px
+```
+
+## Extension to auto prefix!
+
+-   Autoprefixer
+    This will auto prefix the CSS file and make it compatible!
+
+-   Download it!
+
+## jsDeliver
+
+-   A CDN, content delivery network, can be used to grab already made files, CSS files, JS files, that is given as a `<script>`, in this example, it is used to prefix CSS files so that the CSS files can work in older browsers!
+
 <br>
 <br>
 

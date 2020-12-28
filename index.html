@@ -55,10 +55,10 @@
 					/>
 
 					<ul class="main-nav">
-						<li><a href="#">Food Delivery</a></li>
-						<li><a href="#">How It Works</a></li>
-						<li><a href="#">Our Cities</a></li>
-						<li><a href="#">Sign Up</a></li>
+						<li><a href="#features">Food Delivery</a></li>
+						<li><a href="#works">How It Works</a></li>
+						<li><a href="#loc">Our Cities</a></li>
+						<li><a href="#signup">Sign Up</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -75,7 +75,7 @@
 		</header>
 
 		<!-- Icons + Features -->
-		<section class="section-features">
+		<section id="features" class="section-features">
 			<!-- .row centers content -->
 			<div class="row">
 				<!-- 
@@ -142,7 +142,7 @@
 		</section>
 
 		<!-- Grid of Pics, full width so no .row class! -->
-		<section class="section-meals">
+		<section id="pics" class="section-meals">
 			<!-- first row -->
 			<ul class="meals-showcase clearfix">
 				<li>
@@ -223,7 +223,7 @@
 		</section>
 
 		<!-- How it Works -->
-		<section class="section-steps">
+		<section id="works" class="section-steps">
 			<!-- the header -->
 			<div class="row">
 				<h2>how it works &mdash; simple as 1, 2, 3</h2>
@@ -261,7 +261,7 @@
 		</section>
 
 		<!-- Cities and Locations -->
-		<section class="section-cities">
+		<section id="loc" class="section-cities">
 			<div class="row">
 				<h2>We're currently in these cities</h2>		
 			</div>
@@ -358,7 +358,7 @@
 		</section>
 
 		<!-- Customer Testimonials -->
-		<section class="section-testimonials">
+		<section id="customer" class="section-testimonials">
 			<div class="row">
 				<h2>our customers can't live without us</h2>
 			</div>
@@ -402,7 +402,7 @@
 		</section>
 
 		<!-- Sign up Section, the cards with Sub Plans on! -->
-		<section class="section-signup">
+		<section id="signup" class="section-signup">
 			<div class="row">
 				<h2>Start eating healthy today</h2>
 			</div>
@@ -487,7 +487,7 @@
 		</section>
 	
 		<!-- Contact Form -->
-		<section class="section-form">
+		<section id="contact" class="section-form">
 			<div class="row">
 				<h2>We're happy to hear from you</h2>
 			</div>
@@ -603,11 +603,13 @@
 			</div>
 		</footer>
 
+		<!-- It is called here so after the page loads, then these scripts are loaded -->
+		<!-- I'm assuming this will be used all over, so I'll just have it here -->
+		<!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
+		<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
 	</body>
-
-	<!-- I'm assuming this will be used all over, so I'll just have it here -->
-	<!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
-	<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
 
 </html>
