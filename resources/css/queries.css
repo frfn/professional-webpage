@@ -10,6 +10,12 @@
 	.section-cities .row .col {
 		width: 100%;
 	}
+	header {
+		background-attachment: local;
+	}
+	.section-testimonials {
+		background-attachment: local;
+	}
 }
 
 /* for Small Phones to Tablets! 767px being the max! */
@@ -29,7 +35,7 @@
 	}
 	.hero-text-box {
 		text-align: center;
-		top: 40%;
+		top: 50%;
 		/* border: 2px solid red; */
 		/* left: 50%; */
 		/* transform: translate(-50%, -50%); */
