@@ -3,13 +3,20 @@
 <html lang="en">
 
 	<head>
+		<!-- BASE URL -->
+		<base href="/">
+
+		<!-- important for SEO! -->
+		<meta charset="utf-8">
+		<meta name="description" content="A project from udemy, check it out, pretty cool site.">
+
 		<!-- Animation on Scroll -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
 
-		<!-- Scaling for other media screens, phones + tablets, etc! -->
+		<!-- Scaling for other media screens, phones + tablets, etc!, for media queries -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Third Party! -->
@@ -47,6 +54,16 @@
 
 		<!-- Tab Title -->
 		<title>OmniFood</title>
+		
+		<!-- For FAVICON, grabbed from realfavicongenerator -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/resources/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/resources/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/resources/favicons/favicon-16x16.png">
+		<link rel="manifest" href="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/resources/favicons/site.webmanifest">
+		<link rel="mask-icon" href="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
 	</head>
 
 	<body>
@@ -54,13 +71,15 @@
 		<!-- header, just a div BUT we tell Google Search Engine that this is a header! -->
 		<!-- header has the hero background image -->
 		<header>
-			<nav> <!-- class="sticky" -->
+			<nav> <!-- class="sticky" will be added when waypoint is hit! -->
 				<div class="row">
 					<img
 						class="logo"
 						src="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/resources/img/logo-white.png"
 						alt="white logo"
 					/>
+
+					<!-- currently HIDDEN, display: none until waypoint is hit! -->
 					<img
 						class="black-logo"
 						src="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/resources/img/logo.png"

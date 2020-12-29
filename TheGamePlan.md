@@ -39,7 +39,7 @@
 
 ## Workflow
 
-1.  create folders!
+# 1. create folders!
 
 ```
     /resources
@@ -59,7 +59,7 @@
     style.css
 ```
 
-2. Develop in VS Code
+# 2. Develop in VS Code
 
 -   normalize.css: makes browser render all elements consistently
 
@@ -103,7 +103,7 @@ Go to http://www.responsivegridsystem.com/
 <br>
 <br>
 
-## Header Section
+## --- Header Section ---
 
 ### Part 1 - Appreciate how BASIC it first looks.
 
@@ -139,7 +139,7 @@ It just is a div, with one `<h1>` element, and two `<a>` elements. I want to app
 
 ---
 
--   `transition: ...propNames 0.5s, default: ease in`
+-   `transition: ...propNames 0.5s, default: ease in animation`
 
 <br>
 <br>
@@ -153,7 +153,7 @@ It just is a div, with one `<h1>` element, and two `<a>` elements. I want to app
 <br>
 <br>
 
-## Feature Section
+## --- Feature Section ---
 
 ### Part 1 - Using fluid grid, icons and pseudo-class `:after`
 
@@ -208,7 +208,7 @@ It just is a div, with one `<h1>` element, and two `<a>` elements. I want to app
 -   New CSS props:
     1. `line-height: 145%` ( good range: 120% - 150% ) aka Line Height
 
-## Favorite Meals Section
+## --- Favorite Meals Section ---
 
 ### Part 1: Grid of nice pictures and zoom-in transition using CSS & making `<img>` darker!
 
@@ -228,7 +228,7 @@ New uses for CSS props:
 <br>
 <br>
 
-## How it Works Section
+## --- How it Works Section ---
 
 ### Part 1: draw circle in CSS, cool technique to separate between sections, incorporate App Store and Play Store buttons
 
@@ -301,7 +301,7 @@ The reason there was no padding on top of `HOW IT WORKS - SIMPLE AS 1, 2, 3` tit
 <br>
 <br>
 
-## Cities Section
+## --- Cities Section ---
 
 ### Part 1: I basically coded it myself
 
@@ -325,7 +325,7 @@ Gotten an annoying underline when the `a` tag was styled, in some cases, you wil
 <br>
 <br>
 
-## Customer Testimonials Section
+## --- Customer Testimonials Section ---
 
 ### Part 1: background-image effect
 
@@ -357,7 +357,7 @@ Gotten an annoying underline when the `a` tag was styled, in some cases, you wil
 <br>
 <br>
 
-## Sign Up Section
+## --- Sign Up Section ---
 
 ### Part 1
 
@@ -385,7 +385,7 @@ using a space will not cut it, you must use `&nbsp;`
 <br>
 <br>
 
-## Contact Form Section
+## --- Contact Form Section ---
 
 ### Part 1
 
@@ -407,7 +407,7 @@ CSS style... input[type="text"] , input[type="email"] , input[type="submit"]
 <br>
 <br>
 
-## Footer Section
+## --- Footer Section ---
 
 ### Part 1
 
@@ -426,9 +426,7 @@ Had to think of a way to style the CSS, the transitions for the Social Media ico
 <br>
 <br>
 
-## 5.
-
-## Resonsive Web Design!
+## --- Resonsive Web Design! ---
 
 `@media` queries!
 
@@ -479,9 +477,9 @@ They are all optional. However, if you use not or only, you must also specify a 
 
 You can combine screen widths as well:
 
-Example:
+## Example:
 
-    @media screen and (max-width: 900px) and (min-width: 600px) {
+    @media only screen and (max-width: 900px) and (min-width: 600px) {
         div.example {
             font-size: 50px;
             padding: 50px;
@@ -575,6 +573,22 @@ Experimenting with Waypoints! -- it's pretty cool, it has:
 ## MORE jQuery - scrolling effects
 
 -   check `jQuery.md`
+
+<br>
+
+## FAVICONS?
+
+-   the little icons used in the tabs! lol.
+
+<br>
+<br>
+
+## 5. Enhancing Page Speed
+
+-   Optimize heavy images
+-   Minify CSS and jQuery Code
+
+-   Created an `.md` file!
 
 <br>
 <br>

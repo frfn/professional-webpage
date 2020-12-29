@@ -43,7 +43,7 @@ It makes it easy to
 
 <br>
 
-plug this in at the bottom of the index.html file!
+plug this in at the bottom of the index.html file, but on top of other jQuery files!
 
 <br>
 
@@ -103,6 +103,22 @@ How to access the attributes of elements!
 
 Like if an element has an attribute of name... how do you access and change?
 
+you can use `.attr("name")`
+
+<br>
+
+> using `.attr()`
+
+    if (icon.attr("name") === "menu-outline") {
+    	icon.attr("name", "close-outline");
+    } else {
+    	icon.attr("name", "menu-outline");
+    }
+
+<br>
+
+> using `icon[0].name`
+
 ```
 $(".js--nav-icon").click(() => {
 	const nav = $(".js--main-nav");
@@ -124,3 +140,5 @@ $(".js--nav-icon").click(() => {
 <br>
 
 By accessing the `icon[0].name`, I was able to access the name attirbute and was able to change it as well!
+
+You can also use `.attr()`, I just didn't know about it.

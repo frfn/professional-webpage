@@ -97,7 +97,7 @@ header {
 	/* uses the photo!, you can then use the background props */
 	/* linear-gradient() is a cool little trick, it's like using two images at the same time (i tried 2 imgs, doesnt work lol) */
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-		url(img/hero.jpg);
+		url(img/hero-min.jpg);
 
 	/* viewport, but way too zoomed in */
 	height: 100vh;
@@ -148,6 +148,7 @@ header {
 	margin: 5px 0;
 }
 
+/* for the white hamburger icon location */
 .mobile-nav-icon {
 	float: right;
 	margin-top: 30px;
@@ -155,6 +156,7 @@ header {
 	display: none;
 }
 
+/* for the color of the actual icon */
 .mobile-nav-icon .mobile-icon {
 	color: white;
 	font-size: 200%;
@@ -524,7 +526,7 @@ h3 {
 
 .section-testimonials {
 	background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.8)),
-		url(img/back-customers.jpg);
+		url(img/back-customers-min.jpg);
 
 	background-size: cover;
 

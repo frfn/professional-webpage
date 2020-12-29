@@ -165,7 +165,7 @@ $(".js--nav-icon").click(() => {
 	// 	icon[0].name = "menu-outline";
 	// }
 
-	if (icon.attr("name") == "menu-outline") {
+	if (icon.attr("name") === "menu-outline") {
 		icon.attr("name", "close-outline");
 	} else {
 		icon.attr("name", "menu-outline");
