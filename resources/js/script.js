@@ -149,3 +149,25 @@ $(document).ready(() => {
 			}
 		});
 });
+
+/* Navigation Toggle */
+$(".js--nav-icon").click(() => {
+	const nav = $(".js--main-nav");
+	nav.slideToggle(200); /* def uses display: !value + css slide drawer */
+
+	const icon = $(".js--nav-icon ion-icon");
+
+	console.log(icon[0].name);
+
+	// if (icon[0].name === "menu-outline") {
+	// 	icon[0].name = "close-outline";
+	// } else {
+	// 	icon[0].name = "menu-outline";
+	// }
+
+	if (icon.attr("name") == "menu-outline") {
+		icon.attr("name", "close-outline");
+	} else {
+		icon.attr("name", "menu-outline");
+	}
+});

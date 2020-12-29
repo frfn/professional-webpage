@@ -90,3 +90,37 @@ You must reference the jQuery script first _*THEN*_ reference your `script.js`
 
 -   using waypoint, set the `offset` to 50% - 60% so that it will start between 50% - 60% of vh height!
 -   .addClass will add the CSS and animate the `div`!
+
+## Added a Toggle Button For Navigation!
+
+-   added an `<a>` element in the `<nav>` | toolbar! it includes the `<ion-icon>` element!
+-   added sticky navigation to `queries.css` to alter how it looks for mobile!
+-   added jQuery to change icon buttons for the MENU OUTLINE and CLOSE OUTLINE
+
+## Headache
+
+How to access the attributes of elements!
+
+Like if an element has an attribute of name... how do you access and change?
+
+```
+$(".js--nav-icon").click(() => {
+	const nav = $(".js--main-nav");
+	nav.slideToggle(200); /* def uses display: !value + css slide drawer */
+
+	const icon = $(".js--nav-icon ion-icon");
+
+
+	console.log(icon[0].name);
+
+	if (icon[0].name === "menu-outline") {
+		icon[0].name = "close-outline";
+	} else {
+		icon[0].name = "menu-outline";
+	}
+});
+```
+
+<br>
+
+By accessing the `icon[0].name`, I was able to access the name attirbute and was able to change it as well!

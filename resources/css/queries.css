@@ -48,7 +48,46 @@
 
 	.main-nav {
 		display: none;
+		margin-top: 25px;
+		float: left;
 	}
+
+	.main-nav li {
+		display: block;
+	}
+
+	.main-nav li a:link,
+	.main-nav li a:visited {
+		display: block;
+		border: 0;
+		padding: 10px 0;
+		font-size: 100%;
+	}
+
+	.mobile-nav-icon {
+		display: block;
+	}
+
+	/* Stick Navi */
+	.sticky .main-nav {
+		margin-top: 10px;
+	}
+
+	.sticky .main-nav li a:link,
+	.sticky .main-nav li a:visited {
+		color: #555;
+		padding: 10px 0;
+	}
+
+	.sticky .main-nav li a:hover,
+	.sticky .main-nav li a:active {
+		border-bottom: 0;
+	}
+
+	.sticky .mobile-nav-icon .mobile-icon {
+		color: #555;
+	}
+
 	.long-copy {
 		width: 100%;
 		margin-left: 0%;
