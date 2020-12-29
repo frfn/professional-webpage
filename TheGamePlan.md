@@ -544,6 +544,34 @@ border-radius: 25px
 
 -   A CDN, content delivery network, can be used to grab already made files, CSS files, JS files, that is given as a `<script>`, in this example, it is used to prefix CSS files so that the CSS files can work in older browsers!
 
+## jQuery
+
+Added notes about jQuery!
+
+-   **IMPORTANT**, you MUST have the `<script>` on the top of other scripts!
+
+## Creating a sticky navigation!
+
+-   Created another `<img>` and was styled to display NONE only when `.sticky`
+-   added `js--section-features`, this is so that we can differentiate jQuery vs normal CSS classes
+-
+
+## Downloaded Waypoints!
+
+-   `npm install waypoints`
+-   not logged into package-lock.json
+
+it is the easiest way to trigger a function when you scroll to an element!
+
+Experimenting with Waypoints! -- it's pretty cool, it has:
+
+<br>
+
+| keywords             | Description          |
+| :------------------- | :------------------- |
+| `offset`             | when to execute code |
+| `direction` argument | `up` or `down`       |
+
 <br>
 <br>
 

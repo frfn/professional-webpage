@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <!-- in English -->
 <html lang="en">
+
 	<head>
 
 		<!-- Scaling for other media screens, phones + tablets, etc! -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		<!-- Third Party! -->
 		<!-- Normalize CSS -->
 		<link
 			rel="stylesheet"
@@ -43,15 +45,21 @@
 	</head>
 
 	<body>
+
 		<!-- header, just a div BUT we tell Google Search Engine that this is a header! -->
 		<!-- header has the hero background image -->
 		<header>
-			<nav>
+			<nav> <!-- class="sticky" -->
 				<div class="row">
 					<img
 						class="logo"
 						src="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/resources/img/logo-white.png"
 						alt="white logo"
+					/>
+					<img
+						class="black-logo"
+						src="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/resources/img/logo.png"
+						alt="black logo"
 					/>
 
 					<ul class="main-nav">
@@ -75,7 +83,7 @@
 		</header>
 
 		<!-- Icons + Features -->
-		<section id="features" class="section-features">
+		<section id="features" class="section-features js--section-features">
 			<!-- .row centers content -->
 			<div class="row">
 				<!-- 
@@ -606,10 +614,12 @@
 		<!-- It is called here so after the page loads, then these scripts are loaded -->
 		<!-- I'm assuming this will be used all over, so I'll just have it here -->
 		<!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
 		<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	
+		<script language="JavaScript" type="text/javascript" src="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/resources/js/script.js"></script>
+
 	</body>
 
 </html>

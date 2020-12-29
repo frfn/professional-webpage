@@ -44,3 +44,9 @@ It makes it easy to
 <br>
 
 plug this in at the bottom of the index.html file!
+
+<br>
+
+# Important
+
+You must reference the jQuery script first _*THEN*_ reference your `script.js`
