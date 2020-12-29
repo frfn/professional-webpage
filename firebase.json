@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
