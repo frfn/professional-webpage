@@ -50,3 +50,43 @@ plug this in at the bottom of the index.html file!
 # Important
 
 You must reference the jQuery script first _*THEN*_ reference your `script.js`
+
+## Adding "scroll to" effect!
+
+-   with jQuery!
+
+1st step!
+
+-   add an `id` to sections! Also called `hashes`
+
+2nd step!
+
+-   add the code for scrolly, it is in script.js
+-   NOTE: there is a CSS behavior that targets this: `scroll-behavior: smooth`
+-   NOTE: I bookmarked a page that explains this!
+
+3rd step!
+
+-   we gave a class, called `js--scroll-to-plans`, this is the BUTTON 'Sign up'
+
+4th step!
+
+-   in jQuery, we selected `js--scroll-to-plans` and added a `click` handler and animation.
+-   These were not written by me! Just use someone elses, it's ok.
+
+## Adding scroll effects!
+
+-   MUST add the CDN in the `<head>`, check!
+-   with jQuery!
+-   add the CSS names in the desired locations where you want the animations to happen
+-   added pure CSS in style.css to assist the animations!
+
+1st step!
+
+-   Add `js--wp-#` where you want animation to be!
+-   NOTE: `wp` stands for waypoint -- we will use waypoint!
+
+2nd step!
+
+-   using waypoint, set the `offset` to 50% - 60% so that it will start between 50% - 60% of vh height!
+-   .addClass will add the CSS and animate the `div`!

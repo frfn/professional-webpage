@@ -572,6 +572,10 @@ Experimenting with Waypoints! -- it's pretty cool, it has:
 | `offset`             | when to execute code |
 | `direction` argument | `up` or `down`       |
 
+## MORE jQuery - scrolling effects
+
+-   check `jQuery.md`
+
 <br>
 <br>
 

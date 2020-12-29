@@ -3,6 +3,11 @@
 <html lang="en">
 
 	<head>
+		<!-- Animation on Scroll -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
 
 		<!-- Scaling for other media screens, phones + tablets, etc! -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,8 +82,8 @@
 					Hello super healthy meals.
 				</h1>
 				<!-- its like className={cssClasses.join(" ")} -->
-				<a class="btn btn-full" href="#">I'm hungry</a>
-				<a class="btn btn-ghost" href="#">Show me more</a>
+				<a class="btn btn-full js--scroll-to-plans" href="#signup">I'm hungry</a>
+				<a class="btn btn-ghost js--scroll-to-start" href="#features">Show me more</a>
 			</div>
 		</header>
 
@@ -99,8 +104,9 @@
 					let us take care of that, we're really good at it, we
 					promise!
 				</p>
+
 				<!-- Use Grid CSS (col span-1-of-4) + Icons -->
-				<div class="row">
+				<div class="row js--wp-1">
 					<!-- Column 1 -->
 					<div class="col span-1-of-4 box">
 						<ion-icon class="icon-big" name="infinite-outline"></ion-icon>
@@ -240,7 +246,7 @@
 			<!-- the content -->
 			<div class="row">
 				<!-- the phone photo -->
-				<div class="col span-1-of-2 steps-box">
+				<div class="col span-1-of-2 steps-box js--wp-2">
 					<img class="app-screen" src="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/resources/img/app-iPhone.png" alt="iphone" />
 				</div>
 
@@ -274,7 +280,7 @@
 				<h2>We're currently in these cities</h2>		
 			</div>
 
-			<div class="row">
+			<div class="row js--wp-3">
 				<div class="col span-1-of-4 box">
 					<img src="/Users/flexerfadrigalan/Documents/1. Code/Front End/HTML & CSS Intro/Udemy/Killer Website/udemyProject/resources/img/lisbon-3.jpg" alt="lisbon photo" />
 					<h3>Lisbon</h3>
@@ -410,7 +416,7 @@
 		</section>
 
 		<!-- Sign up Section, the cards with Sub Plans on! -->
-		<section id="signup" class="section-signup">
+		<section id="signup" class="section-signup js--section-plans">
 			<div class="row">
 				<h2>Start eating healthy today</h2>
 			</div>
@@ -418,7 +424,7 @@
 			<div class="row">
 				<!-- the container div -->
 				<div class="col span-1-of-3">
-						<div class="plan-box">
+						<div class="plan-box js--wp-4">
 							<!-- Plan Information -->
 							<div>
 								<h3>Premium</h3>

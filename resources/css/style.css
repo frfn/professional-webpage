@@ -48,6 +48,7 @@ a:active {
 
 /* this is where the google font will go! */
 html {
+	/* scroll-behavior: smooth; THIS ALSO WORKS, no jQuery needed. */
 	background: white;
 	color: #555;
 	font-family: "Lato", "Helvetica", sans-serif;
@@ -722,4 +723,22 @@ select {
 
 .twitter:hover {
 	color: #00aced;
+}
+
+/* =============== 9. Animations =============== */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4 {
+	opacity: 0;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.js--wp-1.animate__animated,
+.js--wp-2.animate__animated,
+.js--wp-3.animate__animated,
+.js--wp-4.animate__animated {
+	opacity: 1;
 }
