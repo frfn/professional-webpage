@@ -73,3 +73,9 @@ Just three steps!
 Suggestion: http://www.godaddy.com/
 
 # Google Analytics!
+
+# Node Modules
+
+This is important, `node_modules` is NOT pushed normally so... i got an error and it was not being downloaded in the Network tab in Chrome Dev Tools!!
+
+https://julie.io/writing/javascript-node-modules/
