@@ -45,6 +45,8 @@
     /resources
         /css
             /img (different from /img in /resources)
+            style.css
+            queries.css
         /js
         /data
         /img
@@ -55,8 +57,6 @@
         /fonts
 
     index.html
-
-    style.css
 ```
 
 # 2. Develop in VS Code
@@ -593,12 +593,14 @@ Experimenting with Waypoints! -- it's pretty cool, it has:
 <br>
 <br>
 
-## 6.
+## 6. Deployment!
 
 <br>
 <br>
 
-## 7.
+## 7. Maintanence!
+
+---
 
 # MARKDOWN NOTES
 

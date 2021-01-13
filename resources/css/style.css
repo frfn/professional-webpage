@@ -4,7 +4,7 @@
 Orange Color: #e67e22
 */
 
-/* =============== BASIC SETUP =============== */
+/* =============== BASIC SETUP, do this first! =============== */
 
 /* clearfix class */
 .clearfix {
@@ -76,7 +76,7 @@ h1 {
 	color: white;
 
 	/* use percentages for RELATIVE UNITS, keep in mind responsive design */
-	font-size: 240%; /* or 40px */
+	font-size: 240%; /* or 44px? */
 
 	/* big font size? LOWER THE WEIGHT */
 	font-weight: 300;
@@ -301,12 +301,6 @@ section {
 	 */
 }
 
-.section-steps {
-	background-color: #f4f4f4;
-	/* padding-top: 80px; */
-	/* margin-top: 80px; */
-}
-
 .section-features {
 }
 
@@ -433,6 +427,12 @@ h3 {
 	width: 40%;
 }
 
+.section-steps {
+	background-color: #f4f4f4;
+	/* padding-top: 80px; */
+	/* margin-top: 80px; */
+}
+
 .steps-box {
 	margin-top: 30px; /* margin: 6px will disrupt grid flow!*/
 }
@@ -529,6 +529,7 @@ h3 {
 		url(img/back-customers-min.jpg);
 
 	background-size: cover;
+	background-position: center;
 
 	color: white;
 
@@ -596,6 +597,7 @@ cite img {
 	border-top-right-radius: 5px;
 }
 
+/* th button for the plan box! */
 .plan-box div:last-child {
 	text-align: center;
 	border: 0;
