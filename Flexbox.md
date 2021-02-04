@@ -2,7 +2,7 @@
 
 ## Sideways Writing
 
--   `writing mode: vertical-rl`
+-   `writing-mode: vertical-rl`
 -   will make text be vertical!
 
 ## Syntax
